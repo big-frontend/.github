@@ -1,6 +1,6 @@
 # 大前端 👋
 
-大前端包含Window、MacOs、Android、iOS 、 React 、 微信小程序 、 flutter等面向UI的平台。
+大前端包含Window、macOS、Android、iOS 、 React 、 微信小程序 、 flutter等面向UI的平台。
 
 
 ## UI
