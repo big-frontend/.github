@@ -68,6 +68,7 @@
   - [matrix](https://github.com/Tencent/matrix)：全部包含
 - React Native
   - [react-native-bundle-splitter](https://github.com/kirillzyusko/react-native-bundle-splitter)： 启动优化，将不需要的进行懒加载模块require
+  - [react-native-startup-time](https://github.com/doomsower/react-native-startup-time):启动时间监控
   - [react-native-bundle-visualizer](https://github.com/IjzerenHein/react-native-bundle-visualizer)：包体积分析
   
   
