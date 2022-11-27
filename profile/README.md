@@ -72,4 +72,8 @@
   - [react-native-bundle-visualizer](https://github.com/IjzerenHein/react-native-bundle-visualizer)：包体积分析
   - [react-native-performance](https://github.com/oblador/react-native-performance):基于Flipper的性能监控
   
+## 虚拟机/引擎
+  - Android：art
+  - React Native/小程序：quickjs 、v8、hermes、javascriptcore，引擎总多如何选型
+  - flutter:dart vm
   
