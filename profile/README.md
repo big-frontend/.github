@@ -4,7 +4,7 @@
 
 占大多数市场的桌面客户端系统有Windows、macOS、Android、iOS，浏览器分为手机浏览器与电脑浏览器，这些客户端统称为大前端，而在这些平台上面又衍生出了微信小程序、Flutter、React Native等跨平台的框架，这些框架主要是通过bright，将前端框架与系统平台连接起来从而实现跨平台。还有一种跨平台，通过编译将一种语言翻译到各个系统平台能识别的机器码或者字节码从而实现跨平台，Kotlin 与 Swift。
 
-所以大前端机会涉及到这么一些关键字: React 全家桶(jsx、React、React Native、Expo)、微信小程序(js)、Flutter(dart)、Jetpack Compose(kotlin)、SwiftUI(swift)、Android、iOS等。
+所以大前端基本涉及到这么一些关键字: React 全家桶(jsx、React、React Native、Expo)、微信小程序(js)、Flutter(dart)、Jetpack Compose(kotlin)、SwiftUI(swift)、Android、iOS等。
 
 ## 混合开发框架
 - [dcloudio/uni-app](https://github.com/dcloudio/uni-app)、[taro](https://github.com/NervJS/taro)：uni-app、taro都是为了抹平React Native、各家小程序js框架的差异
