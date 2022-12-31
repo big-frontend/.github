@@ -76,4 +76,9 @@
   - Android：art
   - React Native/小程序：quickjs 、v8、hermes、javascriptcore，js引擎如何选型?
   - Flutter:dart vm
+
+## 生态工具：
+idea插件开发：[intellij-sdk-code-samples
+](https://github.com/JetBrains/intellij-sdk-code-samples)、[IntelliJ Platform SDK](https://plugins.jetbrains.com/docs/intellij/kotlin-ui-dsl.html#layout-structure)、[IntelliJ Platform UI Guidelines](https://jetbrains.design/intellij/)
+chrome插件开发：[chrome-extensions-samples](https://github.com/GoogleChrome/chrome-extensions-samples)、[extensions](https://developer.chrome.com/docs/extensions/mv3/)
   
