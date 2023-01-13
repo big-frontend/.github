@@ -49,13 +49,8 @@
   - 热修复：[tinker](https://github.com/Tencent/tinker)、[Robust](https://github.com/Meituan-Dianping/Robust):前者需要重启应用patch才生效，后者实时生效。
 
 - React Native
-  - 分包(code split)：[react-native-multibundler](https://github.com/smallnew/react-native-multibundler)、[metro-code-split](https://github.com/wuba/metro-code-split)
-
   - 热更新/热修复(code push,js bundle全量更新与增量更新)：[react-native-code-push](https://github.com/microsoft/react-native-code-push)/[appcenter-cli](https://github.com/microsoft/appcenter-cli)/[appcenter](https://appcenter.ms/)、[expo go](https://github.com/expo/expo/tree/main/apps/eas-expo-go)/[eas-cli
 ](https://github.com/expo/eas-cli)/[eas](https://expo.dev/eas)、[react-native-pushy](https://github.com/reactnativecn/react-native-pushy/)
- 
-- React
-  - 分包：[代码分离](https://webpack.docschina.org/guides/code-splitting/)
 
 ## APM
 ### 稳定性
@@ -68,10 +63,15 @@
 - Android
   - [matrix](https://github.com/Tencent/matrix)：全部包含
 - React Native
-  - [react-native-bundle-splitter](https://github.com/kirillzyusko/react-native-bundle-splitter)： 启动优化，将不需要的进行懒加载模块require
+  - 启动优化
+    - 分包(code split)：[react-native-multibundler](https://github.com/smallnew/react-native-multibundler)、[metro-code-split](https://github.com/wuba/metro-code-split)
+    - 模块懒加载模块require:[react-native-bundle-splitter](https://github.com/kirillzyusko/react-native-bundle-splitter)
   - [react-native-startup-time](https://github.com/doomsower/react-native-startup-time):启动时间监控
   - [react-native-bundle-visualizer](https://github.com/IjzerenHein/react-native-bundle-visualizer)：包体积分析
   - [react-native-performance](https://github.com/oblador/react-native-performance):基于Flipper的性能监控
+  
+- React
+  - 分包：[代码分离](https://webpack.docschina.org/guides/code-splitting/)
   
 ## 虚拟机/引擎
   - Android：art
