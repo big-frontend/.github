@@ -40,10 +40,6 @@
   
 ## 动态性
 
->ps:插件化、分包虽然说法不同但是从使用场景却比较相识，目的都是将apk(jsbundle)安装业务拆分为业务apk(bundle)与基础apk(jsbundle)，所以下面统一叫做分包。
-
-动态性主要从两方面表现：分包与热修复
-
 - Android
   - 插件化：[RePlugin](https://github.com/Qihoo360/RePlugin)
   - 热修复：[tinker](https://github.com/Tencent/tinker)、[Robust](https://github.com/Meituan-Dianping/Robust):前者需要重启应用patch才生效，后者实时生效。
