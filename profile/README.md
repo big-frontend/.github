@@ -13,6 +13,6 @@
 - [flutter](https://github.com/flutter/flutter):相比较于React Native项目，Flutter整个生态更加完整，工程化做得更好，可以用一个粗糙公式表示Flutter = Expo + React Native+生态贡献的代码。
 - 微信小程序的前端框架：[tina](https://github.com/tinajs/tina)
 
-时下最潮、最下饭的技术，flutter也有缺点，不支持动态化，不过可以改造支持，较高的技术门槛，但是React Native却恰恰相反，不仅支持就连Facebook造的Hermes都动态支持读取Hermes的字节码。所以React Native天然更适合电商项目。
+时下最潮、最下饭的技术flutter也有缺点，不支持动态化。不过需要高手改造支持动态化，有较高的技术门槛，但是React Native却恰恰相反，不仅支持就连Facebook造的Hermes都动态支持读取Hermes的字节码。所以React Native天然更适合电商项目。
 
 更多大前端的技术探索 👉🏻 [🔥pisces](https://big-frontend.github.io/pisces/)
