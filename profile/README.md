@@ -12,4 +12,4 @@
 - [flutter](https://github.com/flutter/flutter):相比较于React Native项目，Flutter整个生态更加完整，工程化做得更好，可以用一个粗糙公式表示Flutter = Expo + React Native+生态贡献的代码。
 - 微信小程序的前端框架：[tina](https://github.com/tinajs/tina)
 
-更多大前端的技术讨论 👉🏻 [🔥pisces](https://big-frontend.github.io/pisces/)
+更多大前端的技术探索 👉🏻 [🔥pisces](https://big-frontend.github.io/pisces/)
