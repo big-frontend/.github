@@ -51,7 +51,8 @@
 - React Native
   - 分包(code split)：[react-native-multibundler](https://github.com/smallnew/react-native-multibundler)、[metro-code-split](https://github.com/wuba/metro-code-split)
 
-  - 热更新/热修复(code push,js bundle全量更新与增量更新)：[react-native-code-push](https://github.com/microsoft/react-native-code-push)/[appcenter-cli](https://github.com/microsoft/appcenter-cli)、[react-native-pushy](https://github.com/reactnativecn/react-native-pushy/)、[eas](https://expo.dev/eas)/[eas](https://github.com/expo/eas-cli)
+  - 热更新/热修复(code push,js bundle全量更新与增量更新)：[react-native-code-push](https://github.com/microsoft/react-native-code-push)/[appcenter-cli](https://github.com/microsoft/appcenter-cli)、[react-native-pushy](https://github.com/reactnativecn/react-native-pushy/)、[expo go](https://github.com/expo/expo/tree/main/apps/eas-expo-go)/[eas-cli
+](https://github.com/expo/eas-cli)/[eas](https://expo.dev/eas)
  
 - React
   - 分包：[代码分离](https://webpack.docschina.org/guides/code-splitting/)
