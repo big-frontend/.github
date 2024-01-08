@@ -15,4 +15,13 @@
 
 时下最潮、最下饭的技术flutter也有缺点，不支持动态化。不过需要高手改造支持动态化，有较高的技术门槛，但是React Native却恰恰相反。不仅支持就连Facebook造的Hermes都动态支持读取Hermes的字节码，所以React Native天然更适合电商项目。
 
+## 技术分享主题
+
+Android技术已经走过了十多年了，从技术的增长期到技术的爆炸期，以及现在的稳定期，大量的技术变化带来了效率与性能的提高。在这个项目中，我们会讨论如今Android、跨平台(React Native 、Flutter、微信小程序)项目的工程化，拆分为三个主题：Architecture、DevOps、Performance
+
+- [Architecture](https://big-frontend.github.io/pisces/arch/design_patterns/): 模块化、插件化、组件化、热修复、动态化
+- [DevOps](https://big-frontend.github.io/pisces/devops/)：编码、测试、发布、运营
+- [Performance](https://big-frontend.github.io/pisces/perf/)：Application Performance Monitoring 、Profiling 、 Optimization
+- [bundles-assembler 项目wiki](https://github.com/electrolyteJ/bundles-assembler/wiki)
+
 更多大前端的技术探索 👉🏻 [🔥pisces](https://big-frontend.github.io/pisces/)
