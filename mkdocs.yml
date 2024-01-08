@@ -80,11 +80,11 @@ plugins:
 #         utm_medium: "RSS"
 #         utm_campaign: "feed-syndication"
   - search
-  - i18n:
-      default_language: zh
-      languages:
-        en: English
-        zh: Chinese (Simplified)
+  # - i18n:
+  #     default_language: zh
+  #     languages:
+  #       en: English
+  #       zh: Chinese (Simplified)
   # - redirects:
       # redirect_maps:
         # Redirect all feature pages to features/*
