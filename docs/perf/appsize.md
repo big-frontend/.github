@@ -79,7 +79,7 @@ jpg优化| | | |
 
 ### 资源混淆 ：AGP 与 matrix方案对比
 
-![obfuscate](assets/images/obfuscate.png)
+![obfuscate](../assets/images/obfuscate.png)
 
 资源引用为两种getDrawable(R.mimap.icon_launcher) 和 getIdentifier(resName,resType)
 R.mimap.icon_launcher 经过编译之后为0x7f0d0000，故getDrawable(R.mimap.icon_launcher)  等于 getDrawable(0x7f0d0000) 。而getIdentifier的resName参数微Name,所以混淆name要考虑getIdentifier情况
