@@ -15,27 +15,6 @@ Android技术已经走过了十多年了，从技术的增长期到技术的爆�
 - [Performance](https://big-frontend.github.io/pisces/perf/)：Application Performance Monitoring 、Profiling 、 Optimization
 - [bundles-assembler 项目wiki](https://github.com/electrolyteJ/bundles-assembler/wiki)
 
-## Healthy Condition
-
-| branches  | Build Status   |
-|---| --- |
-|  github/pisces main branch |  [![Pisces CI](https://github.com/big-frontend/pisces/actions/workflows/pisces.yml/badge.svg)](https://github.com/big-frontend/pisces/actions/workflows/pisces.yml)  |
-|  gitlab/pisces main branch |  [![pipeline status](https://gitlab.com/big-frontend/pisces/badges/master/pipeline.svg)](https://gitlab.com/big-frontend/pisces/-/commits/master) |
-|  apk  |  [download url](https://www.pgyer.com/rDcO) |
-
-```
---- android 项目
---- arch # 关注项目架构：开发效率、项目耦合
---- vi  #performance  monitoring & profiling & optimization
-```
-
-|  language  |  files |lines|
-|---| --- |---|
-|  java|201 |24923|
-|  kotlin|256|14222|
-|  c or c++|46|9095|
-
-
 
 
 

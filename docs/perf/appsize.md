@@ -14,49 +14,42 @@ comments: true
 - 优化运行时内存占用
 - 缩短apk安装时间
 
-
-
 ## 优化
 
-### sdk去重
-- Glide(500k) 与 Fresco(2-3M)
-- Okhttp、Volley、Cronet
- 
 ### 拆包
 - 动态下发(replugin、aab、[so](https://github.com/IMFWorks/Android-So-Handler))：dex、so、资源
 - 分解业务(Gradle Product Flavor)：tv、watch、phone
-- Gradle resConfig、split
+    - 非核心做成bundle：log、qrcode
+    - 按需下发资源bundle：splits
 
 ### Minify(Shrink缩减、Obfuscate混淆、Optimize优化)
 
-代码与资源都可以通过shrink、obfuscate、Optimize进行包体积减小。
-- Code Minify：代码的ProGuard或者R8是基于摇树优化(tree-shaking)进行缩减与字段简单命名进行混淆，除了缩减与混淆，我们还能进行代码的优化，基于redex和bytex能做R Filed内联、常量内联 、access 内联、方法删除等
-- Resource Minify：资源缩减用清除无用资源、资源去重、png/webp/gif/jpg图片压缩、png/jpg转webp等方法,且混淆
-- So Minify :去除符号表、非必要去除exception库
+#### Code Minify
+代码的ProGuard或者R8是基于摇树优化(tree-shaking)进行缩减与字段简单命名进行混淆，除了缩减与混淆，我们还能进行代码的优化，基于redex和bytex能做R Filed内联、常量内联 、access 内联、方法删除等
 
-### 案例
-- 模块
-    - 去掉 Fresco(2-3M)
-- 拆包
- - 非核心做成bundle：log、qrcode
- - 按需下发资源bundle：splits
+- 有些代码没有被混淆
+- R field内联
+- sdk去重：Okhttp、Volley、Cronet ； Glide(500k) 与 Fresco(2-3M)
 
-- 代码
- - 有些代码没有被混淆
- - R field内联
+#### Resource Minify
+资源缩减用清除无用资源、资源去重、png/webp/gif/jpg图片压缩、png/jpg转webp等方法,且混淆
 
-- 资源
- - 文件去重：
-   通过计算MD5值计算重复文件，然后修改resource.arsc资源位置。
- - 无用res去除、无用assets去除
- - 混淆：安装包立减1M–微信Android资源混淆打包工具
+- 文件去重：通过计算MD5值计算重复文件，然后修改resource.arsc资源位置。
+- 无用res去除、无用assets去除
+- 混淆：[安装包立减1M–微信Android资源混淆打包工具](https://mp.weixin.qq.com/s?__biz=MzAwNDY1ODY2OQ==&mid=208135658&idx=1&sn=ac9bd6b4927e9e82f9fa14e396183a8f#rd)
+
+#### So Minify 
+去除符号表、非必要去除exception库
+
 - so(https://tech.meituan.com/2022/06/02/meituans-technical-exploration-and-practice-of-android-so-volume-optimization.html)
- - 去除32位，GP强制要求上64位 so
-- 压缩
- - 7zip压缩apk
- - png优化(更优压缩Pngquant 或者转webp)
- - jpg优化(packJPG 和 guetzli 等工具)
- - non-alpha png图片:对于不含alpha通道的png文件，可以转成jpg格式来减少文件的大小
+- 去除32位，GP强制要求上64位 so
+
+#### 压缩
+- 7zip压缩apk：有坑，内置apk安装不了，mmap so失败，内置的apk so必须不压缩
+- png优化(更优压缩Pngquant 或者转webp)
+- jpg优化(packJPG 和 guetzli 等工具)
+- non-alpha png图片:对于不含alpha通道的png文件，可以转成jpg格式来减少文件的大小
+
 
 ## 包监控 与 代码提醒
 
@@ -86,11 +79,27 @@ jpg优化| | | |
 
 ### 资源混淆 ：AGP 与 matrix方案对比
 
+![obfuscate](assets/images/obfuscate.png)
 
 资源引用为两种getDrawable(R.mimap.icon_launcher) 和 getIdentifier(resName,resType)
 R.mimap.icon_launcher 经过编译之后为0x7f0d0000，故getDrawable(R.mimap.icon_launcher)  等于 getDrawable(0x7f0d0000) 。而getIdentifier的resName参数微Name,所以混淆name要考虑getIdentifier情况
 
 AGP 资源混淆较为保守只混淆res目录里的文件名字，而matrix较为激进不仅混淆res目录下的文件名字还混淆Name字段
+
+实验数据
+
+浏览器优化项|优化数据
+--|--
+去掉fresco|2-3M
+R field inline|1.8m
+png优化(更优压缩Pngquant 或者转webp)|1m
+res去重|0.36m
+res压缩|2m
+assets去重|56.2k
+assets压缩|
+资源混淆|
+
+
 ## 更多阅读
 
 - [ProGuard and R8: Comparing Optimizers](https://www.guardsquare.com/blog/proguard-and-r8)
