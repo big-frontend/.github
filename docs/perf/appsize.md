@@ -4,7 +4,7 @@ comments: true
 
 # 包体积(Appsize)
 
-- Android包:n、dex、资源
+- Android包:模块、dex、资源、so
 - js bundle:js.bundle 
 
 好处
@@ -14,10 +14,7 @@ comments: true
 - 优化运行时内存占用
 - 缩短apk安装时间
 
-## 开发提醒、包体积监控
 
-- 包体积分析：[react-native-bundle-visualizer](https://github.com/IjzerenHein/react-native-bundle-visualizer)
-- lint:少用枚举用@IntDef替代、AnimatedDrawable替换为AnimatedVectorDrawable
 
 ## 优化
 
@@ -61,22 +58,39 @@ comments: true
  - jpg优化(packJPG 和 guetzli 等工具)
  - non-alpha png图片:对于不含alpha通道的png文件，可以转成jpg格式来减少文件的大小
 
+## 包监控 与 代码提醒
+
+- 包体积分析：[react-native-bundle-visualizer](https://github.com/IjzerenHein/react-native-bundle-visualizer)
+- lint:少用枚举用@IntDef替代、AnimatedDrawable替换为AnimatedVectorDrawable
+
 ## 技术选型
 
-|   |matrix|booster|bytex
+|   |matrix|booster|AGP
 |--|--|--|--|
-R field inline|  |☑️|☑️
-const inline  |  |   | ☑️|
-access inline |  |   |☑️| 
-资源去重       |☑️|  |   |
-`无用res、assets资源删除`|☑️| | |
-`资源混淆`       |☑️| | |
+R field inline|  |☑️|
+const inline  |  |   | 
+access inline |  |   |
+资源去重       |☑️|  | 
+`无用res、assets资源删除`|☑️| | ☑️
+`资源混淆`       |☑️| | ☑️
 png优化(更优压缩Pngquant 或者转webp)||☑️|
-压缩           |☑️|☑️|
+gif优化| | | |
+jpg优化| | | |
+压缩           |☑️7-zip|☑️zip|
 
 > AGP新资源缩减器(enableNewResourceShrinker)：7.1.0-alpha09试用，8.0正式使用
 > AGP(enableResourceOptimizations): 4.2支持资源混淆
 
+随着AGP支持与完善资源混淆与资源缩减的能力，matrix逐步被取代，与之相比较的booster框架在其扩展性表现优异且补足了AGP与matrix都不具备的优化能力，R field内联与png优化。所以选用booster框架并且在其基础能力上补足“资源去重”能力。  
+
+
+### 资源混淆 ：AGP 与 matrix方案对比
+
+
+资源引用为两种getDrawable(R.mimap.icon_launcher) 和 getIdentifier(resName,resType)
+R.mimap.icon_launcher 经过编译之后为0x7f0d0000，故getDrawable(R.mimap.icon_launcher)  等于 getDrawable(0x7f0d0000) 。而getIdentifier的resName参数微Name,所以混淆name要考虑getIdentifier情况
+
+AGP 资源混淆较为保守只混淆res目录里的文件名字，而matrix较为激进不仅混淆res目录下的文件名字还混淆Name字段
 ## 更多阅读
 
 - [ProGuard and R8: Comparing Optimizers](https://www.guardsquare.com/blog/proguard-and-r8)
