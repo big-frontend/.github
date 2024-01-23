@@ -1,4 +1,4 @@
-# 混合开发框架
+# 跨平台开发框架
 
 - [dcloudio/uni-app](https://github.com/dcloudio/uni-app)、[taro](https://github.com/NervJS/taro)：uni-app、taro都是为了抹平React Native、各家小程序js框架的差异
 - [expo](https://github.com/expo/expo/tree/master) & [facebook/react-native](https://github.com/facebook/react-native) & [react-navigation](https://github.com/react-navigation/react-navigation):Expo是React Native的工程化落地项目，更适合做业务
