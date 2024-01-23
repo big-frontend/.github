@@ -36,7 +36,7 @@ comments: true
 
 ### 案例
 - 模块
-  - 去掉 Fresco(2-3M)
+    - 去掉 Fresco(2-3M)
 - 拆包
  - 非核心做成bundle：log、qrcode
  - 按需下发资源bundle：splits
