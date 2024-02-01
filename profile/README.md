@@ -15,4 +15,6 @@ Android技术已经走过了十多年了，从技术的增长期到技术的爆�
 - [Performance](https://big-frontend.github.io/.github/perf/)：Application Performance Monitoring 、Profiling 、 Optimization
 - [bundles-assembler 项目wiki](https://github.com/electrolyteJ/bundles-assembler/wiki)
 
-更多大前端的技术探索 👉🏻 [🔥big frontend blog](https://big-frontend.github.io/.github/)
+更多大前端的技术探索 👉🏻 
+- [🔥big frontend blog](https://big-frontend.github.io/.github/)
+- [得物大前端](https://tech.dewu.com/section?category_id=1)
