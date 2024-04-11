@@ -1,6 +1,19 @@
 
-## 分析 & 优化
+## Crash 分析 & 优化
 
+## ANR 分析 & 优化
+- MessageQueue.poolOnce： 
+    - 应用超过 100% 导致系统 60% 忙，webview初始化io 占用高，让其空闲在初始化
+    - 其他应用超过 100% 导致系统 60% 忙
+
+- Binder.transcat : 
+    - 下载时频繁调用 ContentProvider 查询数据导致binder线程池满 
+    -  binder 调用耗时
+
+- application no focus windows : 启动 application 超时
+- sp waitall
+- 线程锁
+- HardwareRenderer.nSyncAndDrawFrame阻塞：webview绘制时阻塞，浏览器存在大量过度绘制，优化浏览器 view 数
 
 ## 监控
 | java/kotlin crasher| desc
