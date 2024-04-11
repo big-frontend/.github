@@ -135,6 +135,7 @@ nav:
       - React Native: perf/startup/reactnative.md
     - Render:
       - perf/render/index.md
+      - Android: perf/render/android.md
     - 'Jank': perf/jank.md
     - App Size: 
       - perf/appsize/index.md
