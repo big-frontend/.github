@@ -2,13 +2,14 @@
 ## Crash 分析 & 优化
 
 ## ANR 分析 & 优化
-- MessageQueue.poolOnce： 
+- MessageQueue.nativePollOnce: 
     - 应用超过 100% 导致系统 60% 忙，webview初始化io 占用高，让其空闲在初始化
     - 其他应用超过 100% 导致系统 60% 忙
 
 - Binder.transcat : 
     - 下载时频繁调用 ContentProvider 查询数据导致binder线程池满 
     -  binder 调用耗时
+    - wps binder调用耗时
 
 - application no focus windows : 启动 application 超时
 - sp waitall
