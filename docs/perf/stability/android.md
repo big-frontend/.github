@@ -27,6 +27,6 @@ Dropbox|Android系统
 
 - [Fix the problems](https://developer.android.com/topic/performance/vitals/anr#fix)
 
-[得物App Android Crash治理演进](https://juejin.cn/post/7001060315056046117)
+- [得物App Android Crash治理演进](https://juejin.cn/post/7001060315056046117)
 
-[得物App ANR监控平台设计](https://juejin.cn/post/7009297034440081422)
+- [得物App ANR监控平台设计](https://juejin.cn/post/7009297034440081422)
