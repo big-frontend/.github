@@ -2,19 +2,13 @@
 comments: true
 ---
 
-# 包体积(Appsize)
+# Android App Size
 
-- Android包:模块、dex、资源、so
-- js bundle:js.bundle 
+## 1.分析
 
-好处
+- [Matrix-Android-ApkChecker分析工具](https://github.com/Tencent/matrix/wiki/Matrix-Android-ApkChecker)
 
-- 提高下载转化率
-- 减少rom占用
-- 优化运行时内存占用
-- 缩短apk安装时间
-
-## 优化
+## 2.优化
 
 ### 拆包
 - 动态下发(replugin、aab、[so](https://github.com/IMFWorks/Android-So-Handler))：dex、so、资源
@@ -50,13 +44,7 @@ comments: true
 - jpg优化(packJPG 和 guetzli 等工具)
 - non-alpha png图片:对于不含alpha通道的png文件，可以转成jpg格式来减少文件的大小
 
-
-## 包监控 与 代码提醒
-
-- 包体积分析：[react-native-bundle-visualizer](https://github.com/IjzerenHein/react-native-bundle-visualizer)
-- lint:少用枚举用@IntDef替代、AnimatedDrawable替换为AnimatedVectorDrawable
-
-## 技术选型
+### 技术选型
 
 |   |matrix|booster|AGP
 |--|--|--|--|
@@ -77,9 +65,9 @@ jpg优化| | | |
 随着AGP支持与完善资源混淆与资源缩减的能力，matrix逐步被取代，与之相比较的booster框架在其扩展性表现优异且补足了AGP与matrix都不具备的优化能力，R field内联与png优化。所以选用booster框架并且在其基础能力上补足“资源去重”能力。  
 
 
-### 资源混淆 ：AGP 与 matrix方案对比
+#### 资源混淆 ：AGP 与 matrix方案对比
 
-![obfuscate](../assets/images/obfuscate.png)
+![obfuscate](../../assets/images/obfuscate.png)
 
 资源引用为两种getDrawable(R.mimap.icon_launcher) 和 getIdentifier(resName,resType)
 R.mimap.icon_launcher 经过编译之后为0x7f0d0000，故getDrawable(R.mimap.icon_launcher)  等于 getDrawable(0x7f0d0000) 。而getIdentifier的resName参数微Name,所以混淆name要考虑getIdentifier情况
@@ -99,6 +87,10 @@ assets去重|56.2k
 assets压缩|
 资源混淆|
 
+
+## 3.包监控 与 代码提醒
+
+- lint:少用枚举用@IntDef替代、AnimatedDrawable替换为AnimatedVectorDrawable
 
 ## 更多阅读
 

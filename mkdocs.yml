@@ -30,7 +30,11 @@ theme:
         icon: octicons/moon-24
         name: "Switch to Light Mode"
   features:
-  - navigation.tabs
+    - navigation.tabs
+    - navigation.sections
+    # - navigation.expand
+    - navigation.path
+    - navigation.indexes
 extra_css:
   - 'assets/css/app.css'
 
@@ -121,12 +125,25 @@ nav:
     - 'Middleware': arch/middleware.md
   - 'Performance':
     - 'Index': perf/index.md
-    - 'Stability': perf/stability.md
+    - Stability: 
+      - perf/stability/index.md
+      - Android: perf/stability/android.md
+      - React Native: perf/stability/reactnative.md
+    - Startup:
+      - perf/startup/index.md
+      - Android: perf/startup/android.md
+      - React Native: perf/startup/reactnative.md
+    - Render:
+      - perf/render/index.md
     - 'Jank': perf/jank.md
-    - 'Startup/Render': perf/startup_render.md
-    - 'App Size': perf/appsize.md
+    - App Size: 
+      - perf/appsize/index.md
+      - Android: perf/appsize/android.md
+      - React Native: perf/appsize/reactnative.md
     - 'Cpu': perf/cpu.md
-    - 'Memory': perf/mem.md
+    - Memory:
+      - perf/mem/index.md
+      - Android: perf/mem/android.md
     - 'Network': perf/net.md
   - 'DevOps': 
     - 'Index': devops/index.md
