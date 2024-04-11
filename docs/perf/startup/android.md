@@ -2,14 +2,11 @@
 comments: true
 ---
 
-## 1.分析
-
-
-## 2.优化
+## 分析 & 优化
 
 - [Be aware of common issues](https://developer.android.com/topic/performance/vitals/launch-time#common)
 
-## 3.监控
+## 监控
 
 Matrix中Android端实现
 

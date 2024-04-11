@@ -1,5 +1,5 @@
 
-## 1.分析
+## 分析
 
 ### 分析思路
 - 静息态内存分析(优化app在后台时的内存，防止被llk):做内存分析，统计大图加载；动画播放；内存泄露；数据结构不合理
@@ -23,7 +23,7 @@ macos:
 /Applications/dev/Android Studio.app/Contents/jre/Contents/Home/bin
 ```
 
-## 2.内存优化
+## 内存优化
 - 设备分级
     1. 设备分级:对于低端设备可以关闭动画；使用RBG_565
     2. 缓存管理:设计一套统一的缓存管理机制
@@ -39,7 +39,7 @@ macos:
             4.针对无法重编 so 的情况：针对可重编的 so 情况
 
 
-## 3.内存监控
+## 内存监控
 - [LeakCanary](https://github.com/square/leakcanary)
 - [Matrix ResourceCanary](https://github.com/Tencent/matrix/wiki/Matrix-Android-ResourceCanary)
 - [大图监控]()

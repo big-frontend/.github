@@ -4,11 +4,9 @@ comments: true
 
 # Android App Size
 
-## 1.分析
+## 分析 & 优化
 
 - [Matrix-Android-ApkChecker分析工具](https://github.com/Tencent/matrix/wiki/Matrix-Android-ApkChecker)
-
-## 2.优化
 
 ### 拆包
 - 动态下发(replugin、aab、[so](https://github.com/IMFWorks/Android-So-Handler))：dex、so、资源
@@ -88,7 +86,7 @@ assets压缩|
 资源混淆|
 
 
-## 3.包监控 与 代码提醒
+## 包监控 与 代码提醒
 
 - lint:少用枚举用@IntDef替代、AnimatedDrawable替换为AnimatedVectorDrawable
 

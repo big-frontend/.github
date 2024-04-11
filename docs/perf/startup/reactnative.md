@@ -2,10 +2,7 @@
 comments: true
 ---
 
-## 1.分析
-
-
-## 2.优化
+## 分析 & 优化
 
 - [Be aware of common issues](https://developer.android.com/topic/performance/vitals/launch-time#common)
 
@@ -20,7 +17,7 @@ comments: true
 - 分包：[代码分离](https://webpack.docschina.org/guides/code-splitting/)
 
 
-## 3.监控
+## 监控
 
 React Native启动监控
 
