@@ -136,6 +136,7 @@ nav:
     - Render:
       - perf/render/index.md
       - Android: perf/render/android.md
+      - React Native: perf/render/reactnative.md
     - Jank: 
       - perf/jank/index.md
       - Android: perf/jank/android.md
@@ -148,6 +149,7 @@ nav:
     - Memory:
       - perf/mem/index.md
       - Android: perf/mem/android.md
+      - React Native: perf/mem/reactnative.md
     - 'Network': perf/net.md
   - 'DevOps': 
     - 'Index': devops/index.md
