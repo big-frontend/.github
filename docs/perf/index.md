@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 ## Performance(Profiling、Optimization、Monitoring )
 
 性能有业务与技术之分，业务性能我们能肉眼感知到的，技术性能就比较底层，一个业务性能的问题产生往往是由多个技术性能排列组合而成，比如卡顿，其产生原因有慢函数、内存泄漏、网络延时等构成。

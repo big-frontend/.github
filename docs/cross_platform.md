@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 跨平台开发框架
 
 - [dcloudio/uni-app](https://github.com/dcloudio/uni-app)、[taro](https://github.com/NervJS/taro)：uni-app、taro都是为了抹平React Native、各家小程序js框架的差异

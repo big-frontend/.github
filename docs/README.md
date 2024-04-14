@@ -1,3 +1,7 @@
+---
+comments: true
+---
+
 # 大前端 👋
 
 一款跨平台框架必然涉及到两部分，前端与后端，前端为基于js或者dart语言创建的框架，后端为系统平台，提供硬件能力。
@@ -12,7 +16,7 @@ Android技术已经走过了十多年了，从技术的增长期到技术的爆�
 
 - [Architecture](https://big-frontend.github.io/pisces/arch/): 关注项目架构：开发效率、项目耦合。 eg. 模块化、插件化、组件化、热修复、动态化
 - [DevOps](https://big-frontend.github.io/pisces/devops/)：编码、测试、发布、运营
-- [Performance](https://big-frontend.github.io/pisces/perf/)：Application Performance Monitoring 、Profiling 、 Optimization
+- [Performance](https://big-frontend.github.io/pisces/perf/)：Application Performance  Profiling、Optimization、Monitoring
 - [bundles-assembler 项目wiki](https://github.com/electrolyteJ/bundles-assembler/wiki)
 
 

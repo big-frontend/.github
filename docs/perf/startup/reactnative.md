@@ -2,6 +2,10 @@
 comments: true
 ---
 
+---
+comments: true
+---
+
 ## 分析 & 优化
 
 - [Be aware of common issues](https://developer.android.com/topic/performance/vitals/launch-time#common)
