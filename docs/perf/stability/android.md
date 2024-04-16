@@ -4,6 +4,7 @@ comments: true
 ## Crash 分析 & 优化
 
 ## ANR 分析 & 优化
+
 - MessageQueue.nativePollOnce: 
     - 应用超过 100% 导致系统 60% 忙，webview初始化io 占用高，让其空闲在初始化
     - 其他应用超过 100% 导致系统 60% 忙
@@ -13,12 +14,12 @@ comments: true
     -  binder 调用耗时
     - wps binder调用耗时
 
-- application no focus windows : 启动 application 超时
 - sp waitall
 - 线程锁
 - HardwareRenderer.nSyncAndDrawFrame阻塞：webview绘制时阻塞，浏览器存在大量过度绘制，优化浏览器 view 数
 - 一帧绘制太久导致ANR，打印慢函数可定位
 - 内存不足，多次出发gc
+
 
 ## 监控
 | java/kotlin crasher| desc
