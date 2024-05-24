@@ -15,8 +15,8 @@ comments: true
     - wps binder调用耗时
 
 - 锁：
- - sp waitall
- - 线程锁
+    - sp waitall
+    - 线程锁
 
 - HardwareRenderer.nSyncAndDrawFrame阻塞：webview绘制时阻塞，浏览器存在大量过度绘制，优化浏览器 view 数
 - 一帧绘制太久导致ANR，打印慢函数可定位
