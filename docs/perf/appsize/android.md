@@ -86,9 +86,32 @@ assets压缩|
 资源混淆|
 
 
+aab优化|优化数据
+--|--
+启用针对语言的配置 APK|2.95 MB（占总大小的 3.03%）
+启用针对屏幕密度的配置 APK|1.07 MB（占总大小的 1.10%）
+
+
+
 ## 包监控 与 代码提醒
 
-- lint:少用枚举用@IntDef替代、AnimatedDrawable替换为AnimatedVectorDrawable
+### 包监控
+
+![obfuscate](../../assets/images/apksize-monitor1.png)
+
+![obfuscate](../../assets/images/apksize-monitor2.png)
+
+### 开发提醒
+
+指定lint提醒开发正确的开发姿势。
+
+1. 不推荐使用枚举，单个枚举会使应用的 classes.dex 文件增加大约 1.0 到 1.4KB 的大小
+
+![obfuscate](../../assets/images/lint-apksize1.png)
+
+2. AnimationDrawable改成AnimationVectorDrawableCompat
+
+![obfuscate](../../assets/images/lint-apksize2.png)
 
 ## 更多阅读
 
