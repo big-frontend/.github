@@ -1,18 +1,18 @@
-#  效率工程
+# DevOps
 
-## 效率工具
-- intellij插件开发：[intellij-sdk-code-samples
-](https://github.com/JetBrains/intellij-sdk-code-samples)、[IntelliJ Platform Plugin SDK](https://plugins.jetbrains.com/docs/intellij/kotlin-ui-dsl.html#layout-structure)、[IntelliJ Platform UI Guidelines](https://jetbrains.design/intellij/)
-- chrome插件开发：[chrome-extensions-samples](https://github.com/GoogleChrome/chrome-extensions-samples)、[extensions](https://developer.chrome.com/docs/extensions/mv3/)
+work flow : code -> test -> deploy -> ops
+
+## 产品迭代模式/项目管理
+
+- 瀑布流式
+- 敏捷开发
+
+像gitlab/github这样的平台都是兼具代码管理、代码审核、任务管理、文档维护的功能，而早期这些能力都是分散的不在一个平台上，比如代码审核有gerrit、代码管理自建git server、任务管理redmine、Phabricator、jira，文档维护有cf。
 
 团队规模分类
 
-- 早期创业研发团队：2人android 2人ios 3个server  1个测试
+- 早期创业研发团队：2人android  2人ios  3个server   1个测试
 - 中厂研发团队: 150多人android 大致也150人ios
-
-## 项目管理
-
-像gitlab/github这样的平台都是兼具代码管理、代码审核、任务管理、文档维护的功能，而早期这些能力都是分散的不在一个平台上，比如代码审核有gerrit、代码管理自建git server、任务管理redmine、Phabricator、jira，文档维护有cf。
 
 ## git 工作流程
 1. git flow(版本发布)
@@ -37,23 +37,6 @@ github flow的开发模式相对来说就更好理解了，只有master这个长
 3. gitlab flow(前两者的有点结合)
 
 Chromium项目采用gitlab flow工作流程
-
-## 开发模式
-
-- 瀑布流式
-- 敏捷开发
-
-## 扫描
-- 质量扫描：Sonar、Qodana、Infer、Android Linter
-- 源代码安全扫描
-- 第三方组件安全扫描(sca)
-- 开源合规扫描
-## 自动化测试
-- 接口测试
-- UI测试
-## 发布
-- sdk发布到maven仓库
-- apk/js bundle/插件/补丁发布到蒲公英或者自建发布平台
 
 ## 参考文章
 
