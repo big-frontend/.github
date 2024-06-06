@@ -28,11 +28,11 @@
 - release分支用于发布版本之前创建的分支，由develop分支衍生出来的，如果测试有bug需要在此上面修复，然后会被并入master分支和develop分支；如果测试没有bug直接并入。
 - hotfix分支，在上线之后出现bug，由master分支衍生出来。修复之后并入master分支和develop分支。
 
-很多手机厂商都是使用这种工作流程
+很多手机厂商都是使用git flow这种工作流程
 
 2. github flow（持续发布）
 
-github flow的开发模式相对来说就更好理解了，只有master这个长期分支。通过提交pr让大家讨论pr从而促进团队交流。
+github flow的开发模式相对来说就更好理解了，只有master这个长期分支, 通过提交pr让大家讨论pr从而促进团队交流。
 
 3. gitlab flow(前两者的有点结合)
 
