@@ -7,7 +7,7 @@
 模块化我们主要从app framework 与 bundles 两个大方面来进行。app framework的模块通常有这些模块：common、 network、storage、image & graphic 、av(audio & video)、lbs(map & location)、ui component，bundles的模块通常有这些：user、im、code scanner、upgrade等
 
 ## 组件化/插件化
-组件化的目的是优化构建速度与项目解耦，而插件化不仅拥有组件化的这些能力还能提高启动速度、降低包体积、优化内存。那么如何将组件化与插件化落地到项目，请移步这个项目[bundles-assembler](https://github.com/electrolyteJ/bundles-assembler)，欢迎star与提issue。
+组件化的目的是优化构建速度与项目解耦，而插件化不仅拥有组件化的这些能力还能提高启动速度、降低包体积、优化内存。那么如何将组件化与插件化落地到项目，请移步这个项目[module-assembler](https://github.com/big-frontend/module-assembler)，欢迎star与提issue。
 
 ## 热修复
 热修复与插件化从技术的核心比较类似，但是使用场景不同，热修复更多是针对fix bug这样的场景，所以其包体积很小。当前的热修复方案有tinker & robous ，前者需要重启应用才能生效，后者实时生效。
