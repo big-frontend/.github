@@ -15,6 +15,12 @@ Android技术已经走过了十多年了，从技术的增长期到技术的爆�
 - [DevOps](https://big-frontend.github.io/.github/devops/)：编码、测试、发布、运营
 
 
+平台|语言| ui框架 |端
+---|---|---|----
+apple|swift| swiftui| phone/table/car/pc
+android|kotlin| compose| phone/table/car/pc
+harmony|arkts|arkui| phone/table/car/pc
+browser|jsx| react|  web
 
 更多大前端的技术探索 👉🏻 
 
