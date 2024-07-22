@@ -19,8 +19,8 @@ Android技术已经走过了十多年了，从技术的增长期到技术的爆�
 ---|---|---|----
 apple|swift| swiftui| phone/table/car/pc
 android|kotlin| compose| phone/table/car/pc
-harmony|arkts|arkui| phone/table/car/pc
-browser|jsx| react|  web
+harmony|arkts(ts) |arkui| phone/table/car/pc
+browser|jsx/tsx(js/ts)| react|  web
 
 更多大前端的技术探索 👉🏻 
 
