@@ -21,10 +21,12 @@ Tracer是trace cpu工具的统称，可用来分析卡顿、启动、渲染问�
 
 | tracer  |类型|图表类型|性能损耗
 | --- | --- |--- | ---|
+
 |  微信的[TraceCanary](https://github.com/Tencent/matrix/wiki/Matrix-Android-TraceCanary) | ... |...|...|
 | facebook的[profilo](https://github.com/facebookincubator/profilo) |  sample和instrument|...|sample和instrument性能损耗小，但是instrument存在兼容性问题
 |uber的[Nanoscope](https://github.com/uber/nanoscope)|instrument|Call Chart|在ArtMethod执行入口和执行结束位置增加埋点代码，性能损耗小
 | android的traceview | instrument 和 sample|Call Chart|instrument traceview基于android runtime函数调用的event，性能损耗大;sample  traceview提供的sample类型采集trace，性能损耗比instrument小
+|  字节[btrace](https://github.com/bytedance/btrace/blob/master/README.zh-CN.md) | sample|Call Chart|...
 | android的systrace |sample|Call Chart|systrace 封装linux的ftrace，性能损耗小
 | android的[simpleperf](https://android.googlesource.com/platform/system/extras/+/master/simpleperf/doc/README.md)|sample|Frame Chart|部分功能封装systrace ,利用 CPU 的性能监控单元（PMU）提供的硬件 perf 事件，性能损耗小
 
