@@ -20,14 +20,15 @@ Tracer是trace cpu工具的统称，可用来分析卡顿、启动、渲染问�
 ### 各家公司的Android trace分析工具
 
 | tracer  |类型|图表类型|性能损耗
-| --- | --- |--- | ---|
+| --- | --- |--- | ---
 |  微信的[TraceCanary](https://github.com/Tencent/matrix/wiki/Matrix-Android-TraceCanary) | ... |...|...|
 | facebook的[profilo](https://github.com/facebookincubator/profilo) |  sample和instrument|...|sample和instrument性能损耗小，但是instrument存在兼容性问题
 |uber的[Nanoscope](https://github.com/uber/nanoscope)|instrument|Call Chart|在ArtMethod执行入口和执行结束位置增加埋点代码，性能损耗小
-| android的traceview | instrument 和 sample|Call Chart|instrument traceview基于android runtime函数调用的event，性能损耗大;sample  traceview提供的sample类型采集trace，性能损耗比instrument小
 |  字节[btrace](https://github.com/bytedance/btrace/blob/master/README.zh-CN.md) | sample|Call Chart|...|
+| android的traceview | instrument 和 sample|Call Chart|instrument traceview基于android runtime函数调用的event，性能损耗大;sample  traceview提供的sample类型采集trace，性能损耗比instrument小
 | android的systrace |sample|Call Chart|systrace 封装linux的ftrace，性能损耗小
 | android的[simpleperf](https://android.googlesource.com/platform/system/extras/+/master/simpleperf/doc/README.md)|sample|Frame Chart|部分功能封装systrace ,利用 CPU 的性能监控单元（PMU）提供的硬件 perf 事件，性能损耗小
+| android的[Perfetto](https://perfetto.dev/docs/)（支持Android 10+，欲取代systrace） |sample|Call Chart|systrace 封装linux的ftrace，性能损耗小
 
 > ps:instrument类型的trace工具，既可以通过命令行脚本start/stop录制下trace文件，也可以通过代码中的Debug#startMethodTracing/stopMethodTracing录制下两函数范围内的trace文件。sample类型的trace工具，仅通过命令行脚本start/stop录制下埋了Trace#beginSection/endSection的trace文件。
 
@@ -37,11 +38,9 @@ Tracer是trace cpu工具的统称，可用来分析卡顿、启动、渲染问�
 
 > instrument traceview: java代码使用Debug#startMethodTracing/stopMethodTracing
 
-android团队提供的trace ui
+### Android Studio CPU Profile vs. Perfetto
 
-- Android Studio CPU Profiler:整合了 systrace(命令行：`py -2 systrace.py --help`) 、traceview、simpleperf
-- [Perfetto](https://perfetto.dev/docs/) 命令行工具（Android 10 及更高版本）
-- System tracing utility:android手机设置中开发者模式提供的“系统跟踪”功能
+Android Studio CPU Profiler整合了systrace(命令行：`py -2 systrace.py --help`) 、traceview、simpleperf  , Perfetto支持Android 10+，欲取代systrace,使用 perfetto 格式存储 trace 信息。 采集 system trace 原先用 systrace.py脚本，在 android 10+之后 支持System tracing utility(android手机设置中开发者模式提供的“系统跟踪”功能)和 adb shell perfetto 两种方式
 
 
 ### React Native框架提供的trace
