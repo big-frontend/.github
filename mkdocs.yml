@@ -153,9 +153,9 @@ nav:
     - 'Network': perf/net.md
   - 'DevOps': 
     - 'Index': devops/index.md
+    - 'Requirements': devops/requirement.md
     - 'Code': devops/code.md
-    - 'Test': devops/test.md
-    - 'Deploy': devops/deploy.md
+    - 'Verify': devops/verify.md
 
 extra:
   analytics:
