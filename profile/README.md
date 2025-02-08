@@ -21,7 +21,7 @@ apple|swift| swiftui| phone/table/car/pc
 android|kotlin| compose| phone/table/car/pc
 harmony|arkts(ts) |arkui| phone/table/car/pc
 browser|jsx/tsx(js/ts)| react|  web
-小程序｜ js、ts | | web
+小程序 | js、ts | | web
 
 更多大前端的技术探索 👉🏻 
 
