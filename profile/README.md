@@ -15,6 +15,7 @@ Android技术已经走过了十多年了，从技术的增长期到技术的爆�
 - [DevOps](https://big-frontend.github.io/.github/devops/)：编码、测试、发布、运营
 
 
+### 各个平台对比
 平台|语言| ui框架 |端
 ---|---|---|----
 apple|swift| swiftui| phone/table/car/pc
@@ -22,6 +23,17 @@ android|kotlin| compose| phone/table/car/pc
 harmony|arkts(ts) |arkui| phone/table/car/pc
 browser|jsx/tsx(js/ts)| react|  web
 小程序 | js、ts | | web
+
+### 跨平台框架对比
+
+
+
+跨平台框架\平台 |小程序 |浏览器(browser) |鸿蒙(harmony) | android/ios/window/macos/linux
+---|---|---|----|---
+KMP|  | | | 
+Flutter | | | | 
+React | | | | 
+Taro | | | | 
 
 更多大前端的技术探索 👉🏻 
 
