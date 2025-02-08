@@ -28,9 +28,9 @@ browser|jsx/tsx(js/ts)| react|  web
 
 跨平台框架\平台 |小程序 |浏览器(browser) |鸿蒙(harmony) | android/ios/window/macos/linux
 ---|---|---|----|---
-KMP|  | | | 
+KMP(Compose)|  | | | 
 Flutter | | | | 
-React | | | | 
+Expo(React) | | | | 
 Taro | | | | 
 
 ### kmp、taro 技术探索
