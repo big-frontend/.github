@@ -24,20 +24,6 @@ harmony|arkts(ts) |arkui| phone/table/car/pc
 browser|jsx/tsx(js/ts)| react|  web
 小程序 | js、ts | | web
 
-### 跨平台框架对比
-
-跨平台框架\平台 |小程序 |浏览器(browser) |鸿蒙(harmony) | android/ios/window/macos/linux
----|---|---|----|---
-KMP(Compose)|  | | | 
-Flutter | | | | 
-Expo(React) | | | | 
-Taro | | | | 
-
-### kmp、taro 技术探索
-
-[spacecraft-kmp](https://github.com/big-frontend/spacecraft-kmp) 、[spacecraft-taro](https://github.com/big-frontend/spacecraft-taro)
-
-
 更多大前端的技术探索 👉🏻 
 
 - [🔥big frontend blog](https://big-frontend.github.io/.github/)
