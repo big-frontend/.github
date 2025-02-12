@@ -13,9 +13,13 @@ KMP(Compose)|  | ✅| |  ✅
 [dcloudio/uni-app](https://github.com/dcloudio/uni-app) |✅ |✅ |✅ | ✅
 
 > ps
+> 
 > - dcloudio/uni-app、taro：uni-app、taro都是为了抹平React Native、各家小程序js框架的差异
+>   
 > - expo & facebook/react-native & [react-navigation](https://github.com/react-navigation/react-navigation):Expo是React Native的工程化落地项目，更适合做业务
+>   
 > - flutter:相比较于React Native项目，Flutter整个生态更加完整，工程化做得更好，可以用一个粗糙公式表示Flutter = Expo + React Native+生态贡献的代码。
+>   
 > - 微信小程序的前端框架：[tina](https://github.com/tinajs/tina)
 >   
 > flutter support harmony：https://gitee.com/openharmony-sig/flutter_flutter  ， react support harmony： https://gitee.com/openharmony-sig/ohos_react_native  > 
