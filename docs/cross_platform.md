@@ -22,7 +22,7 @@ KMP(Compose)|  | ✅| |  ✅
 >   
 > - 微信小程序的前端框架：[tina](https://github.com/tinajs/tina)
 >   
-> flutter support harmony：https://gitee.com/openharmony-sig/flutter_flutter  ， react support harmony： https://gitee.com/openharmony-sig/ohos_react_native  > 
+> flutter support harmony：https://gitee.com/openharmony-sig/flutter_flutter  ， react support harmony： https://gitee.com/openharmony-sig/ohos_react_native
 
 时下最潮、最下饭的技术flutter也有缺点，不支持动态化。不过需要高手改造支持动态化，有较高的技术门槛，但是React Native却恰恰相反。不仅支持就连Facebook造的Hermes都动态支持读取Hermes的字节码，所以React Native天然更适合电商项目。
 
