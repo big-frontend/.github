@@ -8,7 +8,7 @@ comments: true
 ---|---|---|----|---
 KMP(Compose)|  | ✅| |  ✅
 [flutter](https://github.com/flutter/flutter) | |✅ | ✅ | ✅
-[expo](https://github.com/expo/expo/tree/master)  | |✅ |✅ | ✅
+[expo](https://github.com/expo/expo/tree/main)  | |✅ |✅ | ✅
 [taro](https://github.com/NervJS/taro) |✅ |✅ |✅ | ✅
 [dcloudio/uni-app](https://github.com/dcloudio/uni-app) |✅ |✅ |✅ | ✅
 
